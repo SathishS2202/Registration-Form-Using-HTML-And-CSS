@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Student Registration Form</h2>
+        <form action="#" method="post">
+            <div>
+               <label for="rollno">Roll Number:</label>
+               <input type="text" id="rollno" name="rollno" placeholder="Enter Roll Number" required>
+            </div>
+            <div>
+               <label for="name">Student Name:</label>
+               <input type="text" id="name" name="name" placeholder="Enter Student Name" required>
+            </div>
+            <div>
+            <label for="dept">Department:</label>
+            <select id="dept" name="dept" required>
+                <option value="" disabled selected>Select Department</option>
+                <option value="cse">CSE</option>
+                <option value="ece">ECE</option>
+                <option value="aiml">AIML</option>
+                <option value="mech">MECH</option>
+                <option value="civil">CIVIL</option>
+            </select>
+             </div>
+             <div>
+               <label for="marks10">10th Marks:</label>
+               <input type="number" id="marks10" name="marks10" placeholder="Enter 10th Marks" required>
+            </div>
+            <div>
+              <label for="marks12">12th Marks:</label>
+              <input type="number" id="marks12" name="marks12" placeholder="Enter 12th Marks" required>
+            </div>
+            <div>
+               <label for="degree">Degree Percentage:</label>
+               <input type="number" id="degree" name="degree" placeholder="Enter Degree Percentage" required>
+            </div>
+            <div class="buttons">
+                <button style="color: rgb(247, 247, 247); background-color: rgb(47, 212, 14);" type="submit" class="btn-submit">Submit</button>
+                <button style="color: rgb(248, 238, 238); background-color: rgb(240, 15, 15);" type="reset" class="btn-cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
